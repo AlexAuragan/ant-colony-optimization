@@ -1,0 +1,56 @@
+
+
+{
+    "fr" :{
+        "1 pas" : "+1 pas",
+        "20 pas" : "+20 pas",
+        "100 pas" : "+100 pas",
+        "500 pas" : "+500 pas",
+        "nourriture" : "Nourriture",
+        "info case" : "Info case",
+        "lancer" : "Lancer",
+        "terrain" : "Terrain :",
+        "reduire" : "Réduire",
+        "score" : "Score",
+
+        "rentrer" : "Rentre à la maison", 
+        "fourmiliere" : "Fourmilière :",
+        "fourmi normale" : "Fourmis normale",
+        "fourmi exploratrice" : "Fourmi exploratrice",
+        "fourmi optimisatrice" : "Fourmi optimisatrice",
+        "ajoute 1 fourmi" : "Ajouter 1 fourmi",
+        "ajoute 10 fourmis" : "Ajouter 10 fourmis",
+        "voir fourmi" : "Voir fourmi",
+        "reset" : "Reset",
+        "mettre mur" : "Placer un mur",
+        "enlever mur" : "Enlever un mur",
+        "sauvegarder" : "Sauvegarder",
+        "charger" : "Charger"
+    },
+    "en" :{
+        "1 pas" : "+1 step",
+        "20 pas" : "+20 steps",
+        "100 pas" : "+100 steps",
+        "500 pas" : "+500 steps",
+        "nourriture" : "Food",
+        "info case" : "Info case",
+        "lancer" : "Launch",
+        "terrain" : "Terrain :",
+        "reduire" : "Hide window",
+        "score" : "Score",
+
+        "rentrer" : "Go back home", 
+        "fourmiliere" : "Colony :",
+        "fourmi normale" : "Regular ant",
+        "fourmi exploratrice" : "Explorer ant",
+        "fourmi optimisatrice" : "Smart ant",
+        "ajoute 1 fourmi" : "Add 1 ant",
+        "ajoute 10 fourmis" : "Add 10 ants",
+        "voir fourmi" : "See ant",
+        "reset" : "Reset",
+        "mettre mur" : "Place wall",
+        "enlever mur" : "Remove wall",
+        "sauvegarder" : "Save",
+        "charger" : "Load"
+    }
+}

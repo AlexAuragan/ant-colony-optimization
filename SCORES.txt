@@ -1,0 +1,51 @@
+Modèle 3, 1000 pas, fenètre ouverte, carte 1 :
+12.15s	7p
+8.73s	9p
+10.13s	4p
+10.62s	3p
+9.46s	2p
+
+Modèle 3, 1000 pas, fenètre fermée, carte 1 :
+0.639s	4p
+0.686s	11p
+0.686s	6p
+0.733s	1p
+0.702s	6p
+
+
+Modèle 2, 1000 pas, fenètre ouverte, carte 1 :
+34.22s	22p
+35.27s	31p
+32.85s	64p
+36.36s	23p
+34.49s	30p
+
+Modèle 2, 1000 pas, fenètre fermée, carte 1 :
+1.73s	55p
+1.62s	30p
+1.45s	27p
+1.74s	29p
+1.73s	25p
+
+
+Modèle 1, 1000 pas, fenètre ouverte, carte 1 :
+59.25s	18p
+46.53s	30p
+55.60s	27p
+43.10s	32p
+32.50s	40p
+
+Modèle 1, 1000 pas, fenètre fermée, carte 1 :
+1.46s	39p
+1.84s	48p
+1.62s	28p
+1.56s	28p
+1.63s	19p
+
+
+
+
+
+Carte vide :
+	Ouvert :
+		modèle 1: 128.5s, 125.5s

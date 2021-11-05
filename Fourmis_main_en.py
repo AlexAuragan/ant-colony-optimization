@@ -10,7 +10,7 @@ from tkinter import filedialog
 import tkinter as tk
 from math import pi
 from time import time
-from Sauvegarde import load_terrain, save_terrain
+from Fonctions.Sauvegarde import load_terrain, save_terrain
 
 import json
 with open('language.json',encoding='utf-8') as fd:
@@ -144,6 +144,7 @@ def create_terrain() :
                 x,y = couple[0],couple[1]
                 terrain.Liste_Cases[x][y].food += 3
                 s = terrain.Liste_Cases[x][y].a_update()
+            terrain.update_cases()
         elif click == "ouvre_case" :
             fenetreC = tk.Tk()
             fenetreC.geometry("800x500")
@@ -236,7 +237,7 @@ def create_terrain() :
     txt_Fourmiliere.grid(row = 2)
     spin_fml = tk.Spinbox(frame_fourmis, values=[fml.name for fml in terrain.Liste_Fourmiliere], width=20)
     spin_fml.grid(row=3,padx=10, pady=3)
-    spin_radius = tk.Spinbox(frame_terrain, values=[10,1,2,3,4,5,6,7,8,9,10], width=10)
+    spin_radius = tk.Spinbox(frame_terrain, values=[1,2,3,4,5,6,7,8,9,10], width=10)
     spin_radius.grid(row = 9,padx=10, pady=3)
     spin_type_fourmi = tk.Spinbox(frame_fourmis, values=["Fourmi normale", "Fourmi exploratrice", "Fourmi optimisatrice"], width=20)
     spin_type_fourmi.grid(row = 4,padx=10, pady=3)

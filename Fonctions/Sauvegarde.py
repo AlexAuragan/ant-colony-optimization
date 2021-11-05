@@ -1,12 +1,3 @@
-import sys
-import os, inspect
-path = os.path.dirname(os.path.abspath(inspect.getfile(inspect.currentframe())))
-dir_path = os.path.dirname(os.path.realpath(path))
-if not dir_path in sys.path :
-    sys.path.append(dir_path)
-
-
-
 def convert_case_to_str(case) :
     [i,j] = case.coo
     opacite = case.opacite

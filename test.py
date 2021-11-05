@@ -3,14 +3,7 @@ import os, inspect
 path = os.path.dirname(os.path.abspath(inspect.getfile(inspect.currentframe())))
 if not path in sys.path :
     sys.path.append(path)
-    
-from Classes.Classe_Terrain import Terrain
 
-import sys
-import os, inspect
-path = os.path.dirname(os.path.abspath(inspect.getfile(inspect.currentframe())))
-if not path in sys.path :
-    sys.path.append(path)
 
 from Classes.Classe_Terrain import Terrain
 from Classes.Classe_Fourmiliere import Fourmiliere
@@ -18,7 +11,7 @@ from tkinter import filedialog
 import tkinter as tk
 from math import pi
 from time import time
-from Sauvegarde import load_terrain, save_terrain
+from Fonctions.Sauvegarde import load_terrain, save_terrain
 
 class Interface() :
     
@@ -40,7 +33,7 @@ class Interface() :
         helpf.geometry("800x500")
         fourmi = self.spin_fourmi.get()
         Fourmiliere = self.spin_fml.get() 
-        for fml in terrain.Liste_Fourmiliere :
+        for fml in self.terrain.Liste_Fourmiliere :
             if fml.name == Fourmiliere :
                 Fourmiliere = fml
                 break
@@ -153,11 +146,11 @@ class Interface() :
                     canevasC.create_text(300,150 + (id+len(Case.Liste_Odeur["food"]))*50,text=str(odeur.coo_case)+" -> " +str(odeur.next_case), fill = "black")
                     canevasC.create_text(400,150 + (id+len(Case.Liste_Odeur["food"]))*50,text="de valeur :"+str(odeur.evalue()), fill = "black", anchor="w")
         elif self.click == "place block": 
-            s = terrain.Liste_Cases[x][y]
+            s = self.terrain.Liste_Cases[x][y]
             s.opacite = 1
             s.a_update()
         elif self.click == "remove block": 
-            s = terrain.Liste_Cases[x][y]
+            s = self.terrain.Liste_Cases[x][y]
             s.opacite = 0
             s.a_update()
     def spawn_food(self) :
@@ -309,9 +302,9 @@ class Interface() :
         for i in range(120) :
             self.canevas.create_line(i*10,0,i*10,800) 
         
-        self.but_save = tk.Button(self.frame_mapmaking, text = "save", command = lambda: self.save(terrain), activebackground = "gray70" )
+        self.but_save = tk.Button(self.frame_mapmaking, text = "save", command = lambda: self.save(self.terrain), activebackground = "gray70" )
         self.but_save.grid(row = 10, padx=10, pady=3)
-        self.but_load = tk.Button(self.frame_mapmaking, text = "load", command = lambda: self.load(terrain), activebackground = "gray70" )
+        self.but_load = tk.Button(self.frame_mapmaking, text = "load", command = lambda: self.load(self.terrain), activebackground = "gray70" )
         self.but_load.grid(row = 11, padx=10, pady=3)
    
     def affiche(self) :
@@ -323,7 +316,7 @@ if __name__ == "__main__":
     f.write("avec la fenètre ouverte \n")
     for i in range(20) :
         interface = Interface()
-        load_terrain("map 1.txt",interface.terrain)
+        load_terrain("maps/map 1.txt",interface.terrain)
         interface.terrain.load()
         interface.terrain_run()
         interface.canevas.update()
@@ -333,7 +326,7 @@ if __name__ == "__main__":
     f.write("avec la fenètre fermée \n")
     for i in range(20) :
         interface = Interface()
-        load_terrain("map 1.txt",interface.terrain)
+        load_terrain("maps/map 1.txt",interface.terrain)
         interface.terrain.load()
         interface.fenetre1.iconify()
         interface.terrain_run()

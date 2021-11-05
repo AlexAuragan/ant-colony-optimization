@@ -6,8 +6,6 @@ if not dir_path in sys.path :
     sys.path.append(dir_path)
 
 from math import pi
-from numpy import linspace
-from matplotlib.pyplot import show, plot, figure, savefig
 from Fonctions.Fourmis_function import gaussienne
 
 def convert_cases_angle(case_départ :list, case_arrivée:list) :
@@ -40,13 +38,6 @@ def pondereration_direction(angle_fourmi,coo_depart, coo_arrivee) :
 coo_depart = [50,50]
 coo_arrivee = [51,50]
 
-L = linspace(0,2*pi, 1000)
-
-figure()
-plot(L, [pondereration_direction(teta, coo_depart, coo_arrivee) for teta in L],"b")
-
-savefig('figure...')
-show(block = True)
 
 from Classes.Classe_Terrain import Terrain
 from Fonctions.Selection import select_case_around, pondereration_direction

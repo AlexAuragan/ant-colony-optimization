@@ -257,10 +257,10 @@ def create_terrain() :
         canevas.create_line(i*10,0,i*10,800) 
     
     def save(terrain):
-        nom_chemin = filedialog.asksaveasfilename(initialdir = "/",title = "Select file",filetypes = (("text files","*.txt"),("all files","*.*")))
+        nom_chemin = filedialog.asksaveasfilename(initialdir = path+"/maps",title = "Select file",filetypes = (("text files","*.txt"),("all files","*.*")))
         save_terrain(terrain, nom_chemin)
     def load(terrain):
-        nom_chemin = filedialog.askopenfilename(initialdir = "/",title = "Select file",filetypes = (("text files","*.txt"),("all files","*.*")))
+        nom_chemin = filedialog.askopenfilename(initialdir = path+"/maps",title = "Select file",filetypes = (("text files","*.txt"),("all files","*.*")))
         load_terrain(nom_chemin,terrain)
         terrain.load()
 

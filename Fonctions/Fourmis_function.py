@@ -1,4 +1,4 @@
-from math import pi, exp, sqrt
+from math import pi, exp
 
 def convert_angle_case(angle0,coo_case):#Convertis un angle et une case en la case suivante
     if not type(angle0) == float :

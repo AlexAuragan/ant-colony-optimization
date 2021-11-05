@@ -1,5 +1,5 @@
 from .Fourmis_function import convert_cases_angle, gaussienne, distance_infinie
-from math import pi, exp
+from math import pi
 from random import random
 
 

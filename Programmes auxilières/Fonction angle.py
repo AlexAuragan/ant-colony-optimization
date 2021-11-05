@@ -5,9 +5,9 @@ dir_path = os.path.dirname(os.path.realpath(path))
 if not dir_path in sys.path :
     sys.path.append(dir_path)
 
-from math import pi, exp
+from math import pi
 from numpy import linspace
-from pylab import show, plot, figure, pause, savefig
+from matplotlib.pyplot import show, plot, figure, savefig
 from Fonctions.Fourmis_function import gaussienne
 
 def convert_cases_angle(case_départ :list, case_arrivée:list) :
@@ -49,7 +49,7 @@ savefig('figure...')
 show(block = True)
 
 from Classes.Classe_Terrain import Terrain
-from Fonctions.Selection import select_case_around, look_around, pondereration_direction
+from Fonctions.Selection import select_case_around, pondereration_direction
 import tkinter as tk
 
 terrain = Terrain(tk.Canvas())

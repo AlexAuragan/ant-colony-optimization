@@ -5,9 +5,6 @@ dir_path = os.path.dirname(os.path.realpath(path))
 if not dir_path in sys.path :
     sys.path.append(dir_path)
 
-#from Classes.Classe_Terrain import *
-#from Classes.Classe_Fourmiliere import *
-#from Classes.Classe_Case import *
 
 
 def convert_case_to_str(case) :

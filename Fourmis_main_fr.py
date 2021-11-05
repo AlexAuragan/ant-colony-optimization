@@ -6,11 +6,10 @@ if not path in sys.path :
 
 from Classes.Classe_Terrain import Terrain
 from Classes.Classe_Fourmiliere import Fourmiliere
-from Fonctions.Fourmis_function import convert_cases_angle, convert_angle_case
 from tkinter import filedialog
 import tkinter as tk
 from math import pi
-from time import sleep, time
+from time import time
 from Sauvegarde import load_terrain, save_terrain
 
 import json

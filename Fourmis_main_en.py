@@ -169,10 +169,12 @@ def create_terrain() :
             s = terrain.Liste_Cases[x][y]
             s.opacite = 1
             s.a_update()
+            s.update_couleur()
         elif click == "remove block": 
             s = terrain.Liste_Cases[x][y]
             s.opacite = 0
             s.a_update()
+            s.update_couleur()
     def spawn_food() :
         global click
         if click == "spawn food" :

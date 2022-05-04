@@ -1,5 +1,5 @@
 # ant-colony-optimization
- 
+![Screenshot](images/Capture.PNG)
 ## preamble / préambule
 
 This is the source for a project (TIPE) that I had to do in CPGE in France. Keep in mind that the code was not intended to be used by any other person than me, and the final goal was to make a presentation in French.\
